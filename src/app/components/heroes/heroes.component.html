@@ -3,7 +3,7 @@
 
 <div class="row">
     <div *ngFor="let hero of heroes" class="col-md-3">
-        <img class="card-img" src={{hero.img}} alt="Card image cap">
+        <img class="card-img" [src]="hero.img" [alt]="hero.nombre">
         <div class="card-body">
             <h5 class="card-title">{{hero.nombre}}</h5>
             <p class="card-text">{{hero.bio}}</p>
